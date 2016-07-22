@@ -24,10 +24,10 @@
     CGRect  rect = CGRectMake(0, 0, 320, 220);
     NSArray *arr = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"5.jpg"];
     LyScrollBanner *ScrollBanner = [LyScrollBanner LyScrollBannerWithFrame:rect
-                                                                 ImagesArray:arr];
+                                                            ImageNameArray:arr];
     ScrollBanner.delegate = self;
 //    ScrollBanner.isCancelAutoNextPage = YES;
-//    ScrollBanner.isCancelPageController = YES;
+//    ScrollBanner.isCancelPageControl = YES;
 //    ScrollBanner.isCancelInfiniteBanner = YES;
     [self.view addSubview:ScrollBanner];
     

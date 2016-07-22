@@ -17,21 +17,26 @@
 
 
 @interface LyScrollBanner : UIView
-
+/**
+ *  初始化方法1 - dataSource为url的数组
+ */
 +(instancetype)LyScrollBannerWithFrame:(CGRect)frame
             ImagesArrayWtithNetworking:(NSArray*)dataSource
                   placeholderImageName:(NSString *)placeholderImageName;
 
-
+/**
+ *  初始化方法2 - dataSource为本地imageName的数组
+ */
 +(instancetype)LyScrollBannerWithFrame:(CGRect)frame
-                           ImagesArray:(NSArray*)dataSource;
+                        ImageNameArray:(NSArray*)dataSource;
+
 
 -(instancetype)initWithFrame:(CGRect)frame
-                 ImagesArray:(NSArray *)dataSource;
+             ImageNameArray:(NSArray *)dataSource;
 
 
-@property(nonatomic ,assign)BOOL       isCancelAutoNextPage;
-@property(nonatomic ,assign)BOOL       isCancelPageController;
+@property(nonatomic ,assign)BOOL       isCancelAutoNextPage;//取消自动轮播
+@property(nonatomic ,assign)BOOL       isCancelPageControl;//取消pagecontrol;
 @property(nonatomic ,assign)BOOL       isCancelInfiniteBanner;//取消无限轮播
 
 

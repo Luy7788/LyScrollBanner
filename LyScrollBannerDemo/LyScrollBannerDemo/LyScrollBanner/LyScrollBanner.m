@@ -32,9 +32,9 @@
     return lySrollBanner;
 }
 
-+(instancetype)LyScrollBannerWithFrame:(CGRect)frame ImagesArray:(NSArray*)dataSource{
++(instancetype)LyScrollBannerWithFrame:(CGRect)frame ImageNameArray:(NSArray*)dataSource{
     
-    LyScrollBanner *lyScrollBanner = [[LyScrollBanner alloc]initWithFrame:frame ImagesArray:dataSource];
+    LyScrollBanner *lyScrollBanner = [[LyScrollBanner alloc]initWithFrame:frame ImageNameArray:dataSource];
     return lyScrollBanner;
 }
 
@@ -50,7 +50,7 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame ImagesArray:(NSArray *)dataSource{
+-(instancetype)initWithFrame:(CGRect)frame ImageNameArray:(NSArray *)dataSource{
     
     if(self = [super initWithFrame:frame]){
         self.imagesArray = [NSMutableArray arrayWithArray:dataSource];
@@ -256,16 +256,16 @@
     [self setupCollectionView];
 }
 
--(void)setIsCancelPageController:(BOOL)isCancelPageController{
-    _isCancelPageController = isCancelPageController;
-    if(isCancelPageController == NO){
+
+-(void)setIsCancelPageControl:(BOOL)isCancelPageControl{
+    _isCancelPageControl = isCancelPageControl;
+    if(_isCancelPageControl == NO){
         self.pageControl.hidden = NO;
     }else{
         //隐藏
         self.pageControl.hidden = YES;
     }
 }
-
 
 -(void)setIsCancelInfiniteBanner:(BOOL)isCancelInfiniteBanner{
     
