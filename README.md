@@ -17,7 +17,7 @@
 -(void)LyScrollBannerViewClickTag:(NSInteger)tag;
 ```
 
-![ScreenFlow.gif](http://upload-images.jianshu.io/upload_images/1938605-0332ceca0ef3f569.gif?imageMogr2/auto-orient/strip)
+![ScreenFlow.gif](https://github.com/Super-lying/LyScrollBanner/blob/master/ScreenFlow.gif)
 
 .h 头文件
 ```
